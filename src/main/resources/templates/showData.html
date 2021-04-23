@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html  xmlns:th="http://www.thymeleaf.org" lang="en">
+<head>
+    <meta charset="ISO-8859-1">
+    <title>DataShow</title>
+
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+</head>
+<body>
+
+<br>
+<br>
+<table class="table table-yellow">
+    <thead>
+    <tr>
+        <th scope="col">Id</th>
+        <th scope="col">Name</th>
+        <th scope="col">email</th>
+        <th scope="col">contact</th>
+        <th scope="col">Actions</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr th:each="temp : ${user}">
+        <th scope="row" th:text="${temp.id}"></th>
+        <td th:text="${temp.name}"></td>
+        <td th:text="${temp.email}"></td>
+        <td th:text="${temp.phoneNumber}"></td>
+        <td><a class="btn btn-warning"
+               th:href="@{/delete/(id=${temp.id})}">Delete</a></td>
+    </tr>
+
+    </tbody>
+</table>
+
+
+</body>
+
+</html>

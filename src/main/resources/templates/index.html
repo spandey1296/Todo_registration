@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en"  xmlns:th="http://thymeleaf.org">
+<head>
+    <title>Home</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body{
+            font: 13px/20px "Lucida Grande", Tahoma, Verdana, sans-serif;
+            color: #404040;
+            background: #0ca3d2;
+        }
+        .container {
+            margin: 0;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+
+        }
+        button a{
+            text-decoration: none;
+            color: white;
+            font-size: 15px;
+        }
+        button{
+            background-color: #AA335C;
+            color: yellowgreen;
+            text-decoration: none;
+            height: 60px;
+            width: 150px;
+            font-size: 15px;
+            border: none;
+        }
+        button:hover{
+            background-color: black;
+        }
+    </style>
+</head>
+<body>
+<!--<div id="navbar" class="collapse navbar-collapse">-->
+<!--    <ul class="nav navbar-nav navbar-right">-->
+<!--        <li><a th:href="@{/users/login}"><span class="link">Login</span> &ensp;&ensp;</a></li>-->
+<!--        <li><a th:href="@{/users/registration}"><span class="link">SignUp</span> &ensp;&ensp;</a></li>-->
+<!--    </ul>-->
+<!--</div>-->
+
+<div class="container">
+    <div class="jumbotron">
+        <h1 class="display-4">Project of st3 for backend </h1>
+        <p class="lead">This is a simple heroku hosted project unit, there is user login and signup along wiht the todo functionality</p>
+
+
+    </div>
+
+        <button><a th:href="@{/users/login}"><span class="link">Login</span> &ensp;&ensp;</a></button>
+        <button><a th:href="@{/users/registration}"><span class="link">SignUp</span> &ensp;&ensp;</a></button>
+</div>
+</body>
+</html>
