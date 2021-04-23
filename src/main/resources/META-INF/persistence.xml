@@ -11,9 +11,9 @@
 
         <properties>
             <property name="javax.persistence.jdbc.driver" value="org.postgresql.Driver"/>
-            <property name="javax.persistence.jdbc.url" value="jdbc:postgresql://localhost:5433/userdirectory"/>
-            <property name="javax.persistence.jdbc.user" value="postgres"/>
-            <property name="javax.persistence.jdbc.password" value="1296"/>
+            <property name="javax.persistence.jdbc.url" value="jdbc:postgresql://ec2-34-225-167-77.compute-1.amazonaws.com:5432/d3c3e7dui9hicv"/>
+            <property name="javax.persistence.jdbc.user" value="ymwpjkkmzbigdz"/>
+            <property name="javax.persistence.jdbc.password" value="6292eb1a53fa51da42088c4acc5b1bc0f4f1e64ce24717f8bf762a960f0282c5"/>
 
             <property name="hibernate.dialect" value="org.hibernate.dialect.PostgreSQL82Dialect"/>
             <property name="hibernate.temp.use_jdbc_metadata.defaults" value="false"/>
